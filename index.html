@@ -4,23 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/bbb7b987c0.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/bbb7b987c0.js"></script>
     <title>Paradiso</title>
   </head>
   <body>
     <main class="main-container">
-      <nav>
+      <nav class="nav-wrap">
         <div id="nav-wrap-start">
-          <a href="#" class="fas fa-bars"> Menu</a>
-          <a href="#" class="fas fa-search"> Search</a>
-          <a href="#">Programma</a>
+          <div class="nav-menu-search">
+            <a href="#" class="fas fa-bars"></a>
+            <a href="#">Menu</a>
+            <a href="#" class="fas fa-search"></a>
+            <a href="#">Search</a>
+          </div>
+          <div class="nav-program"> 
+           <a href="#">Programma</a>
+          </div>
         </div>
         <div id="nav-wrap-scroll">
-          <a href="#" class="fas fa-bars"></a>
-          <a href="#" class="fas fa-search"> Zoeken</a>
-          <p>Filter<a href="#"> op locatie, maand of programma type</a></p>
-          <p>Toon alleen<a href="#"> Clubnachten</a><a href="#"> Concerten</a></p>
+          <div class="nav-menu-search">
+            <a href="#" class="fas fa-bars"></a>
+            <div class="border-left-search">
+              <a href="#" class="fas fa-search"></a>
+            </div> 
+            <p><a href="#">Zoeken</a></p>
+            <div class="border-left-filter">
+              <p><span>Filter</span></p>
+            </div>
+            <p><a href="#"> op locatie, maand of programma type</a></p>
+          </div>
+          <div class="nav-show">
+            <p>Toon alleen<a href="#"> Clubnachten</a><a href="#"> Concerten</a></p>
+          </div>  
         </div>
       </nav>
       <header class="highlight">
@@ -140,6 +156,10 @@
           </div>
         </div>
       </section>
+
+
+
+      
     </main>  
   </body>
 </html>
