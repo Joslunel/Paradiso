@@ -7,3 +7,21 @@ html {
 *::after {
   box-sizing: inherit;
 }
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --white: #ffffff;
+  --middle-grey: #616161;
+  --black: #000000;
+}
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
