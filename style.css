@@ -83,7 +83,7 @@ a {
 #nav-wrap-scroll a {
   color: var(--middle-grey);
 }
-#nav-wrap-scroll.nav-menu-search {
+#nav-wrap-scroll .nav-menu-search {
   padding-left: 2rem;
 }
 .nav-menu-search p a {
