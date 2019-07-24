@@ -240,7 +240,8 @@ a {
   background: url(https://api.paradiso.nl/img/events/allman-bets-band.jpg?w=606&h=690&fit=crop-49-31);
   background-size: cover;
 }
-/ .concert-today-item-description {
+
+.concert-today-item-description {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
