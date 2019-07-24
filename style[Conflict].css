@@ -1,0 +1,209 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --white: #ffffff;
+  --middle-grey: #606060;
+  --black: #000000;
+}
+.main-container {
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* navigation section*/
+
+.nav-wrap {
+  position: fixed;
+  top: 2rem;
+  margin: 0 auto;
+  z-index: 1;
+  width: 80.7%;
+}
+#nav-wrap-start {
+  background: var(--black);
+  width: 90%;
+  display: none;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+#nav-wrap-start a {
+  color: var(--white);
+}
+.fa-bars {
+  margin: 0 1rem 0 0;
+}
+.fa-search {
+  margin: 0 1rem 0 2rem;
+}
+.nav-menu-search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#nav-wrap-scroll {
+  background: var(--white);
+  color: var(--middle-grey);
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#nav-wrap-scroll .border-left-search {
+  border-left: 1px solid var(--middle-grey);
+  height: 35px;
+  margin-left: 1rem;
+}
+#nav-wrap-scroll .border-left-filter {
+  border-left: 1px solid var(--middle-grey);
+  height: 35px;
+  margin-left: 1rem;
+}
+#nav-wrap-scroll .border-left-search .fa-search {
+  vertical-align: -0.5rem;
+}
+#nav-wrap-scroll a {
+  color: var(--middle-grey);
+}
+#nav-wrap-scroll .nav-menu-search {
+  padding-left: 2rem;
+}
+.nav-menu-search p a {
+  font-size: 1.1rem;
+  opacity: 0.3;
+  white-space: nowrap;
+}
+.border-left-filter p {
+  margin: 0.3rem 2rem 0 2rem;
+}
+.nav-show a {
+  margin: 0 2rem;
+  font-size: 1.1rem;
+  opacity: 0.3;
+  white-space: nowrap;
+}
+.nav-show p {
+  white-space: nowrap;
+}
+
+/* highlight section */
+
+.highlight-container {
+  max-width: 95%;
+  margin: auto;
+  position: relative;
+}
+.paradiso-title img {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.highlight-items {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  height: 1600px;
+  position: absolute;
+  top: 30vh;
+  z-index: -1;
+}
+
+.highlight.main {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(https://api.paradiso.nl/img/events/Ilgen-Nur.jpg?w=1616&h=1456&fit=crop-50-45);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.highlight p {
+  color: var(--white);
+  font-size: 1.5rem;
+  /* line-height: 0.5rem; */
+  margin: 0.5rem;
+  text-shadow: 1px 1px 3px var(--black);
+}
+.artist-name,
+.date {
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+.highlight-text {
+  margin: 0 0 1rem 2rem;
+}
+.highlight.side {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(https://api.paradiso.nl/img/events/000254520009.jpg?w=1616&h=1456&fit=crop-50-50);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.highlight.bottom-left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: url(https://api.paradiso.nl/img/events/DanaGavanski_website2.jpg?w=848&h=808&fit=crop-50-50);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.highlight.bottom-middle {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: url(https://api.paradiso.nl/img/events/SteveGunn-website.jpg?w=848&h=808&fit=crop-55-23);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.highlight.bottom-right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url(https://api.paradiso.nl/img/events/190325_MelanieC_look-11_0137_f1.jpg?w=848&h=1456&fit=crop-37-36);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.concert-today {
+  display: grid;
+  position: absolute;
+  top: 85rem;
+}
+.concert-today h2 {
+  color: var(--white);
+  font-size: 14vw;
+}
+.schedule-container {
+  position: absolute;
+  top: 115rem;
+}
