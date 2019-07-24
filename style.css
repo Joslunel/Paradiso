@@ -20,23 +20,16 @@ a {
   --middle-grey: #606060;
   --black: #000000;
 }
-.main-container {
-  /* display: flex;
-  flex-flow: column nowrap; */
-
-  /* width: 100vw; */
-  /* margin: 0; */
-  /* position: relative; */
-}
 
 /* navigation section*/
 
 .nav-wrap {
   position: fixed;
   top: 2rem;
-  margin: 0 auto;
+  left: 7vw;
+  margin: auto;
   z-index: 2;
-  width: 100vw;
+  width: 85vw;
 }
 #nav-wrap-start {
   background: var(--black);
@@ -114,7 +107,7 @@ a {
 /* highlight section */
 
 .highlight-container {
-  width: 100vw;
+  width: 81vw;
   margin: auto;
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(3, 1fr);
@@ -207,9 +200,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template: repeat(3, 1fr);
-  /* position: absolute;
-  top: 85rem;
-  left: 1rem; */
+  width: 81vw;
   margin: 0 auto;
 }
 .concert-today h2 {
@@ -218,7 +209,7 @@ a {
   grid-row-start: 1;
   grid-row-end: 2;
   color: var(--white);
-  font-size: 18vw;
+  font-size: 14.5vw;
   margin: 15vh 0 3vh 0;
   text-align: center;
 }
@@ -255,7 +246,8 @@ a {
 /* schedule */
 
 .schedule-container {
-  margin-top: 5rem;
+  width: 81vw;
+  margin: 5rem auto;
 }
 .schedule-button-bar {
   display: flex;
