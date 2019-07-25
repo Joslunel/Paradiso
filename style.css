@@ -110,7 +110,7 @@ a {
   width: 81vw;
   margin: auto;
   display: grid;
-  grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+  grid-template: repeat(5, 300px) / repeat(3, 33%);
   z-index: -1;
   margin-top: 10rem;
 }
@@ -133,11 +133,16 @@ a {
   grid-row-start: 1;
   grid-row-end: 4;
   background-image: url(https://api.paradiso.nl/img/events/Ilgen-Nur.jpg?w=1616&h=1456&fit=crop-50-45);
-  background-size: cover;
+  background-size: 55vw;
   display: flex;
   align-items: flex-end;
   margin-top: 20vh;
+  transition: all 0.5s ease-in-out;
 }
+.main:hover {
+  background-size: 60vw;
+}
+
 .highlight-text p {
   color: var(--white);
   font-size: 1.5rem;
@@ -155,10 +160,14 @@ a {
   grid-row-start: 1;
   grid-row-end: 3;
   background-image: url(https://api.paradiso.nl/img/events/000254520009.jpg?w=1616&h=1456&fit=crop-50-50);
-  background-size: cover;
+  background-size: 32vw;
   display: flex;
   align-items: flex-end;
   margin-top: 20vh;
+  transition: all 0.5s ease-in-out;
+}
+.side:hover {
+  background-size: 35vw;
 }
 .highlight-text {
   margin: 0 0 2rem 2rem;
@@ -169,9 +178,13 @@ a {
   grid-row-start: 4;
   grid-row-end: 6;
   background-image: url(https://api.paradiso.nl/img/events/DanaGavanski_website2.jpg?w=848&h=808&fit=crop-50-50);
-  background-size: cover;
+  background-size: 43vw;
   display: flex;
   align-items: flex-end;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-left:hover {
+  background-size: 47vw;
 }
 .bottom-middle {
   grid-column-start: 2;
@@ -179,9 +192,14 @@ a {
   grid-row-start: 4;
   grid-row-end: 6;
   background-image: url(https://api.paradiso.nl/img/events/SteveGunn-website.jpg?w=848&h=808&fit=crop-55-23);
-  background-size: cover;
+  background-size: 43vw;
+  background-position-x: -100px;
   display: flex;
   align-items: flex-end;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-middle:hover {
+  background-size: 47vw;
 }
 .bottom-right {
   grid-column-start: 3;
@@ -189,9 +207,14 @@ a {
   grid-row-start: 3;
   grid-row-end: 6;
   background-image: url(https://api.paradiso.nl/img/events/190325_MelanieC_look-11_0137_f1.jpg?w=848&h=1456&fit=crop-37-36);
-  background-size: cover;
+  background-size: 35vw;
+  background-position-x: -100px;
   display: flex;
   align-items: flex-end;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-right:hover {
+  background-size: 38vw;
 }
 
 /* today's performances */
