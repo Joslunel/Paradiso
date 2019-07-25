@@ -134,13 +134,48 @@ a {
   grid-row-end: 4;
   background-image: url(https://api.paradiso.nl/img/events/Ilgen-Nur.jpg?w=1616&h=1456&fit=crop-50-45);
   background-size: 55vw;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
   margin-top: 20vh;
   transition: all 0.5s ease-in-out;
 }
 .main:hover {
   background-size: 60vw;
+}
+.main .highlight-text {
+  padding-top: 73vh;
+  transition: all 0.5s ease-in-out;
+}
+.main:hover .highlight-text {
+  padding-top: 71vh;
+}
+.side .highlight-text {
+  padding-top: 38vh;
+  transition: all 0.5s ease-in-out;
+}
+.side:hover .highlight-text {
+  padding-top: 36vh;
+}
+.bottom-left .highlight-text {
+  padding-top: 55vh;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-left:hover .highlight-text {
+  padding-top: 53vh;
+}
+.bottom-middle .highlight-text {
+  padding-top: 52vh;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-middle:hover .highlight-text {
+  padding-top: 50vh;
+}
+.bottom-right .highlight-text {
+  padding-top: 93vh;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-right:hover .highlight-text {
+  padding-top: 91vh;
 }
 
 .highlight-text p {
@@ -153,6 +188,25 @@ a {
 .date {
   font-weight: bold;
 }
+.date {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.main:hover .date {
+  opacity: 1;
+}
+.side:hover .date {
+  opacity: 1;
+}
+.bottom-left:hover .date {
+  opacity: 1;
+}
+.bottom-middle:hover .date {
+  opacity: 1;
+}
+.bottom-right:hover .date {
+  opacity: 1;
+}
 
 .side {
   grid-column-start: 3;
@@ -161,8 +215,8 @@ a {
   grid-row-end: 3;
   background-image: url(https://api.paradiso.nl/img/events/000254520009.jpg?w=1616&h=1456&fit=crop-50-50);
   background-size: 32vw;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
   margin-top: 20vh;
   transition: all 0.5s ease-in-out;
 }
@@ -179,8 +233,8 @@ a {
   grid-row-end: 6;
   background-image: url(https://api.paradiso.nl/img/events/DanaGavanski_website2.jpg?w=848&h=808&fit=crop-50-50);
   background-size: 43vw;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
   transition: all 0.5s ease-in-out;
 }
 .bottom-left:hover {
@@ -194,8 +248,8 @@ a {
   background-image: url(https://api.paradiso.nl/img/events/SteveGunn-website.jpg?w=848&h=808&fit=crop-55-23);
   background-size: 43vw;
   background-position-x: -100px;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
   transition: all 0.5s ease-in-out;
 }
 .bottom-middle:hover {
@@ -209,8 +263,8 @@ a {
   background-image: url(https://api.paradiso.nl/img/events/190325_MelanieC_look-11_0137_f1.jpg?w=848&h=1456&fit=crop-37-36);
   background-size: 35vw;
   background-position-x: -100px;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
   transition: all 0.5s ease-in-out;
 }
 .bottom-right:hover {
