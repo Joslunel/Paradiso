@@ -17,7 +17,7 @@ a {
 }
 :root {
   --white: #ffffff;
-  --middle-grey: #606060;
+  --middle-grey: #868686;
   --dark-grey: #252525;
   --black: #000000;
 }
@@ -329,13 +329,21 @@ a {
   margin-bottom: 3rem;
 }
 .schedule-button-bar a {
-  color: var(--white);
+  color: var(--middle-grey);
   padding: 1rem;
   margin-right: 0.3rem;
   background: var(--dark-grey);
 }
 
 .schedule-button-bar a:hover {
+  color: var(--white);
+}
+.schedule-button-bar .current {
+  color: var(--white);
+  background: var(--middle-grey);
+}
+.schedule-button-bar a:active {
+  color: var(--white);
   background: var(--middle-grey);
 }
 .buttons-left {
@@ -392,6 +400,12 @@ a {
 .item-name .description {
   color: var(--middle-grey);
   margin-top: 0;
+}
+.description:hover {
+  color: var(--white);
+}
+.item-time > p:hover {
+  color: var(--white);
 }
 .schedule-item-list {
   border-bottom: 1px solid var(--middle-grey);
