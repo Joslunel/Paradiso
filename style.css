@@ -366,7 +366,7 @@ a {
 }
 .schedule-item {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: 200px 1fr 1fr;
   justify-content: space-between;
 }
 .item-date {
