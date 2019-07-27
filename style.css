@@ -355,6 +355,12 @@ a {
   display: flex;
   justify-content: space-around;
 }
+
+.schedule-item-list {
+  border-bottom: 1px solid var(--middle-grey);
+  margin-top: 1.5rem;
+}
+
 .schedule-item-list p {
   color: var(--white);
 }
@@ -368,6 +374,9 @@ a {
   grid-column-end: 2;
   margin-top: 0;
   margin-right: 4rem;
+  font-size: 1.5rem;
+  color: var(--middle-grey);
+  font-weight: bold;
 }
 .item-name {
   grid-column-start: 2;
@@ -379,20 +388,15 @@ a {
   justify-self: end;
   margin-top: 0;
 }
-.schedule-item .item-date {
-  font-size: 1.5rem;
-  color: var(--middle-grey);
-  font-weight: bold;
-}
+
 .schedule-item .name {
   font-size: 1.5rem;
   color: var(--white);
   font-weight: bold;
-}
-.item-name .name {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+
 .schedule-item .item-time p {
   margin-top: 0;
   color: var(--middle-grey);
@@ -406,8 +410,4 @@ a {
 }
 .item-time > p:hover {
   color: var(--white);
-}
-.schedule-item-list {
-  border-bottom: 1px solid var(--middle-grey);
-  margin-top: 1.5rem;
 }
