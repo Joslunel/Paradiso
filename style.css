@@ -341,7 +341,7 @@ a {
 
 .schedule-container {
   width: 81vw;
-  margin: 5rem 0;
+  margin: 5rem auto;
 }
 .schedule-button-bar {
   display: flex;
