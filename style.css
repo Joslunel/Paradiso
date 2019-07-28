@@ -341,12 +341,11 @@ a {
 
 .schedule-container {
   width: 81vw;
-  margin: 5rem auto;
+  margin: 5rem 0;
 }
 .schedule-button-bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 3rem;
 }
 .schedule-button-bar a {
@@ -555,7 +554,7 @@ a {
     margin: 5rem auto;
   }
   .schedule-button-bar {
-    transform: scale(0.8);
+    display: none;
   }
   .concert-today p {
     grid-column-start: 1;
