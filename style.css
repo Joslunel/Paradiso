@@ -346,6 +346,7 @@ a {
 .schedule-button-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 3rem;
 }
 .schedule-button-bar a {
@@ -489,7 +490,7 @@ a {
   }
   .highlight-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 700px;
   }
   .concert-today p {
     grid-column-start: 1;
@@ -521,5 +522,76 @@ a {
     grid-column-end: 3;
     justify-self: end;
     margin-top: 0;
+  }
+}
+@media (max-width: 499px) {
+  .nav-wrap {
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+    width: 100vw;
+  }
+  #nav-wrap-scroll {
+    display: none;
+  }
+  .highlight-container {
+    width: 90vw;
+    margin-top: 10rem;
+  }
+  .side,
+  .bottom-left,
+  .bottom-middle,
+  .bottom-right {
+    display: none;
+  }
+  .highlight-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
+  }
+  .schedule-container {
+    width: 90vw;
+    margin: 5rem auto;
+  }
+  .schedule-button-bar {
+    transform: scale(0.8);
+  }
+  .concert-today p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .concert-today {
+    width: 90vw;
+  }
+
+  .concert-today-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .buttons-right {
+    display: none;
+  }
+  .schedule-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+  .item-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .item-time {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+    margin-top: 0;
+  }
+  .nav-menu-search p a {
+    display: none;
   }
 }
