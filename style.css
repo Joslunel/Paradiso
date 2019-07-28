@@ -389,13 +389,15 @@ a {
   grid-template-columns: 200px 1fr 1fr;
   justify-content: space-between;
 }
+.schedule-item > .item-date {
+  color: var(--middle-grey);
+}
 .item-date {
   grid-column-start: 1;
   grid-column-end: 2;
   margin-top: 0;
   margin-right: 4rem;
   font-size: 1.5rem;
-  color: var(--middle-grey);
   font-weight: bold;
 }
 .item-name {
@@ -435,6 +437,9 @@ a {
 .schedule-item:hover p {
   color: var(--white);
 }
+.schedule-item:hover .item-date {
+  color: var(--middle-grey);
+}
 .schedule-item:hover ul {
   color: var(--white);
   list-style: disc;
@@ -446,13 +451,75 @@ a {
 .schedule-item:hover .item-name {
   margin-left: 2rem;
 }
-@media (max-width: 1240px) {
+@media (min-width: 1001px) {
+  #nav-wrap-scroll-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1240px) {
   .highlight-container {
     grid-template: repeat(5, 200px) / repeat(3, 1fr);
   }
   .nav-menu-search p a {
     display: none;
   }
+  .concert-today p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .concert-today-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 }
-@media (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) {
+  #nav-wrap-scroll {
+    display: none;
+  }
+  .side,
+  .bottom-left,
+  .bottom-middle,
+  .bottom-right {
+    display: none;
+  }
+  .highlight-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px;
+  }
+  .concert-today p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .concert-today-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .buttons-right {
+    display: none;
+  }
+  .schedule-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+  .item-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .item-time {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+    margin-top: 0;
+  }
 }
